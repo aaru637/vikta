@@ -1,15 +1,16 @@
-import './App.css';
-import Home from './components/home/Home';
-import NavBar from './components/navbar/NavBar';
+
+import "./App.css";
+
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import About from "./components/about/About";
 
 function App() {
   return (
-    <>
-      <div className={`home bg-cover`}>
-      <NavBar />
-      <Home />
-      </div>
-    </>
+    <Router>
+      <Routes>
+        <Route path="/" element={<About />} />
+      </Routes>
+    </Router>
   );
 }
 
