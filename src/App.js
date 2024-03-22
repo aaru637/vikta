@@ -3,7 +3,7 @@ import About from "./components/about/About";
 import NavBar from "./components/navbar/NavBar";
 import Home from "./components/home/Home";
 import { BrowserRouter } from "react-router-dom";
-import TechnicalEvent from "./components/events/TechnicalEvent";
+import Events from "./components/events/Events";
 
 function App() {
   return (
@@ -14,7 +14,7 @@ function App() {
           <Home />
         </div>
         <About />
-        <TechnicalEvent />
+        <Events />
       </div>
     </BrowserRouter>
   );

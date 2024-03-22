@@ -20,15 +20,31 @@ const EventList = (eventData) => {
       {eventData.events.map((event, idx) => (
         <Carousel.Item key={idx}>
           <ExampleCarouselImage image={event.image} title={event.title} />
-          <Carousel.Caption>
-            <h3>{event.title}</h3>
-            <p>Venue: {event.venue}</p>
-            <p>Coordinators: {event.coordinators.join(", ")}</p>
-            <ul>
-              {event.details.map((detail, detailIdx) => (
-                <li key={detailIdx}>{detail}</li>
-              ))}
-            </ul>
+          <Carousel.Caption className="event-details-container">
+            <div className="event-details-head">
+              <h3 className="event-title">{event.title}</h3>
+            </div>
+            <div className="event-details-body">
+              <ul>
+                {event.details.map((detail, detailIdx) => (
+                  <li className="event-detail-text golden-text" key={detailIdx}>
+                    {detail}
+                  </li>
+                ))}
+              </ul>
+            </div>
+            <div className="event-details-foot">
+              <div className="venu">
+                <p className="event-footer-data">{event.venue}</p>
+                <h5 className="event-footer-title">Venue</h5>
+              </div>
+              <div className="coordinator">
+                <p className="event-footer-data">
+                  {event.coordinators.join(", ")}
+                </p>
+                <div className="event-footer-title">Coordinators</div>
+              </div>
+            </div>
           </Carousel.Caption>
         </Carousel.Item>
       ))}
