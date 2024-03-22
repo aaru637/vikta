@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/vikta/static/css/main.abcc47da.css",
+    "main.js": "/vikta/static/js/main.c44783c8.js",
+    "static/media/home_bg.jpg": "/vikta/static/media/home_bg.2f062fa1939faa2acbff.jpg",
+    "static/media/associationlogo.jpg": "/vikta/static/media/associationlogo.08266418a1eac70073f5.jpg",
+    "static/media/gcelogo.jpeg": "/vikta/static/media/gcelogo.94c4504ed422c42cde3d.jpeg",
+    "index.html": "/vikta/index.html",
+    "static/media/close.svg": "/vikta/static/media/close.45bf93e36905876d1bb598b5c001db89.svg",
+    "static/media/open.svg": "/vikta/static/media/open.4debb41411cd9535f542a8d3b7989f51.svg",
+    "main.abcc47da.css.map": "/vikta/static/css/main.abcc47da.css.map",
+    "main.c44783c8.js.map": "/vikta/static/js/main.c44783c8.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.abcc47da.css",
+    "static/js/main.c44783c8.js"
+  ]
+}
