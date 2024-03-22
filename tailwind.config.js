@@ -5,8 +5,17 @@ module.exports = {
   ],
   theme: {
     screens: {
-      'sm': '550px',
-    }
+      'sm': '640px',
+    },
+    fontFamily: {
+      signika: ['Signika', 'sans-serif'],
+      roboto: ['Roboto Slab', 'serif'],
+      raleway: ['Raleway', 'serif'],
+      patua: ['Patua One', 'serif'],
+      oswald: ['Oswald', 'serif'],
+      exo_2: ['Exo 2', 'serif'],
+      dosis: ['Dosis', 'serif'],
+    },
   },
   plugins: [],
 }

@@ -1,8 +1,14 @@
 // Images
-const gcelogo = '../assets/images/gcelogo.jpeg';
-const assoclogo = '../assets/images/associationlogo.jpg';
-const homebg = '../assets/images/home_bg.jpg';
+// icons
+import open from '../assets/svg-icons/open.svg';
+import close from '../assets/svg-icons/close.svg';
 
+import gcelogo from '../assets/images/gcelogo.jpeg';
+import assoclogo from '../assets/images/associationlogo.jpg';
+import homebg from '../assets/images/home_bg.jpg';
+import rocket from '../assets/lottie-files/home-rocket.json';
+import rain from '../assets/lottie-files/rain.json';
+import hello from '../assets/lottie-files/hello.json';
 // navbar
 const navbarTitles = [
     {
@@ -35,5 +41,4 @@ const sympoDate = 'April 8th 2024';
 const secretary = ['General Secretary', 'Join Secretary'];
 const secretaryNames = ['Varunkumar S', 'Sangeetha M'];
 
-export { gcelogo, assoclogo, college1, college2, department, association1, association2, vikta, sympo, sympoDate, secretary, secretaryNames, navbarTitles }
-export {homebg}
+export { gcelogo, assoclogo, homebg, college1, college2, department, association1, association2, vikta, sympo, sympoDate, secretary, secretaryNames, navbarTitles, close, open, rocket, rain, hello }

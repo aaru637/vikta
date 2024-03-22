@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.college {
+    background: linear-gradient(160deg, orange, white, green);
+    background-clip: text;
+    color: transparent;
+}
+
+.department {
+    background: linear-gradient(90deg, skyblue, rgb(202, 104, 202), pink, rgb(23, 230, 23));
+    background-clip: text;
+    color: transparent;
+}
+
+.association {
+    background: linear-gradient(90deg, white, yellow, white);
+    background-clip: text;
+    color: transparent;
+}

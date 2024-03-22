@@ -1,0 +1,8 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.home {
+    background-image: url('./assets/images/home_bg.jpg');
+    min-height: fit-content;
+}
