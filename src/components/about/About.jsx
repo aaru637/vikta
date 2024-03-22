@@ -1,29 +1,20 @@
 import React, { useRef, useEffect, useState } from "react";
 import AboutContent from "./AboutContent";
 import AboutEvent from "./AboutEvent";
-import { useSpring, animated } from "react-spring";
 
-const LazyLoadedAboutContent = () => {
+const LazyLoadedComponent = ({ children }) => {
   const [isVisible, setIsVisible] = useState(false);
   const ref = useRef(null);
-
-  const animationProps = useSpring({
-    opacity: isVisible ? 1 : 0,
-    transform: isVisible ? "translateY(0px)" : "translateY(50px)",
-  });
 
   useEffect(() => {
     const observer = new IntersectionObserver(
       ([entry]) => {
-        if (entry.isIntersecting) {
-          setIsVisible(true);
-          observer.unobserve(ref.current);
-        }
+        setIsVisible(entry.isIntersecting);
       },
       {
         root: null,
         rootMargin: "0px",
-        threshold: 0.5,
+        threshold: 0.7,
       }
     );
 
@@ -39,53 +30,30 @@ const LazyLoadedAboutContent = () => {
   }, []);
 
   return (
-    <animated.div ref={ref} style={animationProps}>
-      <AboutContent />
-    </animated.div>
+    <div
+      ref={ref}
+      style={{
+        opacity: isVisible ? 1 : 0,
+        transform: isVisible ? "translateX(0px)" : "translateX(-50px)",
+        transition: "opacity 0.5s, transform 0.5s",
+      }}
+    >
+      {children}
+    </div>
   );
 };
 
-const LazyLoadedAboutEvent = () => {
-  const [isVisible, setIsVisible] = useState(false);
-  const ref = useRef(null);
+const LazyLoadedAboutContent = React.memo(() => (
+  <LazyLoadedComponent>
+    <AboutContent />
+  </LazyLoadedComponent>
+));
 
-  const animationProps = useSpring({
-    opacity: isVisible ? 1 : 0,
-    transform: isVisible ? "translateY(0px)" : "translateY(50px)",
-  });
-
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        if (entry.isIntersecting) {
-          setIsVisible(true);
-          observer.unobserve(ref.current);
-        }
-      },
-      {
-        root: null,
-        rootMargin: "0px",
-        threshold: 0.5,
-      }
-    );
-
-    if (ref.current) {
-      observer.observe(ref.current);
-    }
-
-    return () => {
-      if (ref.current) {
-        observer.unobserve(ref.current);
-      }
-    };
-  }, []);
-
-  return (
-    <animated.div ref={ref} style={animationProps}>
-      <AboutEvent />
-    </animated.div>
-  );
-};
+const LazyLoadedAboutEvent = React.memo(() => (
+  <LazyLoadedComponent>
+    <AboutEvent />
+  </LazyLoadedComponent>
+));
 
 const About = () => {
   return (
