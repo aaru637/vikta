@@ -29,7 +29,7 @@ const NavBar = () => {
             <div className='font-signika font-bold ps-3'>{vikta}</div>
             <ul className='list-none hidden sm:flex flex-row w-[83%] justify-end gap-8'>
                 {navbarTitles.map((nav) => (
-                    <li key={nav.id} onClick={() => setActive(nav.title)} className={`nav-element px-2 py-1 hover:bg-pink-600 hover:rounded-lg hover:text-white font-bold ${active === nav.value ? "text-white bg-pink-600 rounded-lg" : "text-white"}`} >
+                    <li key={nav.id} onClick={() => setActive(nav.value)} className={`nav-element px-2 py-1 hover:bg-pink-600 hover:rounded-lg hover:text-white font-bold ${active === nav.value ? "text-white bg-pink-600 rounded-lg" : "text-white"}`} >
                         <a href={`#${nav.id}`} >{nav.value}</a></li>
                 ))}
             </ul>

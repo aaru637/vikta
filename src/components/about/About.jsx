@@ -93,7 +93,7 @@ const LazyLoadedAboutEvent = () => {
 
 const About = () => {
   return (
-    <div className="about-container">
+    <div className="about-container" id="aboutus">
       <div className="about-inner-container">
         <LazyLoadedAboutContent />
         <LazyLoadedAboutEvent />

@@ -12,7 +12,7 @@ import hello from '../assets/lottie-files/hello.json';
 // navbar
 const navbarTitles = [
     {
-        id: 'home',
+        id: '/',
         value: 'Home'
     },
     {
