@@ -5,7 +5,7 @@ import Lottie from 'react-lottie'
 
 const Home = () => {
     return (
-        <div className='text-white pt-[80px] bg-cover flex gap-10 flex-col items-center font-bold'>
+        <div id='/' className='text-white pt-[80px] bg-cover flex gap-10 flex-col items-center font-bold home bg-no-repeat bg-center'>
 
             {/* Rain Animation */}
             <div className='w-fit h-fit z-10 absolute'>
@@ -38,14 +38,14 @@ const Home = () => {
             <p className='font-roboto sm:text-3xl sympo text-sm'>{sympo}</p>
 
             {/* Sympo Date */}
-            <p className='font-roboto sm:text-3xl sympoDate text-sm'>{sympoDate}</p>
+            <p className='font-roboto sm:text-3xl sympo-date text-sm'>{sympoDate}</p>
 
             {/* Secretary Details */}
             <div className='flex flex-row w-full justify-evenly'>
                 {secretary.map((value, index) => (
                     <div className='flex flex-col items-center'>
-                        <p className='font-signika sm:text-3xl secretary text-lg'>{secretaryNames[index]}</p>
-                        <p className='font-exo sm:text-3xl secretary-name text-sm'>{value}</p>
+                        <p className='font-signika sm:text-3xl secretary-name text-lg'>{secretaryNames[index]}</p>
+                        <p className='font-exo sm:text-lg secretary text-sm'>{`(${value})`}</p>
                     </div>
                 ))}
             </div>
