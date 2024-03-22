@@ -2,62 +2,20 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer components {
-    .home-img {
-        width: calc(100vw * 0.07);
-        height: calc(100vw * 0.07);
-    }
-
-    .home-college {
-        font-size: calc(100vw * 0.02);
-    }
-
-    .home-department {
-        font-size: calc(100vw * 0.019);
-    }
-
-    .home-association {
-        font-size: calc(100vw * 0.018);
-    }
-
-    .home-vikta {
-        font-size: calc(100vw * 0.045);
-    }
-
-    .home-sympo {
-        font-size: calc(100vw * 0.018);
-    }
-
-    .home-sympoDate {
-        font-size: calc(100vw * 0.018);
-    }
-
-    .home-secretary {
-        font-size: calc(100vw * 0.018);
-    }
-
-    .home-secretary-name {
-        font-size: calc(100vw * 0.02);
-    }
-}
-
 .college {
     background: linear-gradient(160deg, orange, white, green);
     background-clip: text;
-    text-shadow: 1px 1px 20px white;
     color: transparent;
 }
 
 .department {
-    background: linear-gradient(90deg, blue, purple, pink, green);
+    background: linear-gradient(90deg, skyblue, rgb(202, 104, 202), pink, rgb(23, 230, 23));
     background-clip: text;
-    text-shadow: 1px 1px 10px aqua;
     color: transparent;
 }
 
 .association {
-    background: linear-gradient(90deg, white, purple, pink, green);
+    background: linear-gradient(90deg, white, yellow, white);
     background-clip: text;
-    text-shadow: 1px 1px 10px black;
     color: transparent;
 }

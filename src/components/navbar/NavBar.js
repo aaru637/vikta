@@ -24,7 +24,7 @@ const NavBar = () => {
 
 
     return (
-        <nav className={`flex justify-between min-w-full items-center px-5 py-5 sticky top-0 z-20 text-white ${scrolled ? "bg-black" : "bg-transparent"
+        <nav className={`flex justify-between min-w-full items-center px-5 py-5 fixed top-0 z-20 text-white ${scrolled ? "bg-black" : "bg-transparent"
             }`}>
             <div className='font-signika font-bold ps-3'>{vikta}</div>
             <ul className='list-none hidden sm:flex flex-row w-[83%] justify-end gap-8'>

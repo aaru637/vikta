@@ -4,5 +4,5 @@
 
 .home {
     background-image: url('./assets/images/home_bg.jpg');
-    height: fit-content;
+    min-height: fit-content;
 }
