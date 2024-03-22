@@ -24,8 +24,8 @@ const navbarTitles = [
         value: 'Events'
     },
     {
-        id: 'contactus',
-        value: 'Contact Us'
+        id: 'register',
+        value: 'Register'
     },
 ];
 

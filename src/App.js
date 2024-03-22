@@ -3,6 +3,8 @@ import "./App.css";
 import About from "./components/about/About";
 import NavBar from "./components/navbar/NavBar";
 import Home from "./components/home/Home";
+import Footer from "./components/footer/Footer";
+import Register from "./components/register/Register"
 
 function App() {
   return (
@@ -10,6 +12,8 @@ function App() {
       <NavBar />
       <Home id={''} />
       <About id={'aboutus'} />
+      <Register />
+      <Footer />
     </div>
   );
 }
