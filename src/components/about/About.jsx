@@ -1,12 +1,98 @@
+import React, { useRef, useEffect, useState } from "react";
 import AboutContent from "./AboutContent";
-import "../about/about.css";
 import AboutEvent from "./AboutEvent";
+import { useSpring, animated } from "react-spring";
+
+const LazyLoadedAboutContent = () => {
+  const [isVisible, setIsVisible] = useState(false);
+  const ref = useRef(null);
+
+  const animationProps = useSpring({
+    opacity: isVisible ? 1 : 0,
+    transform: isVisible ? "translateY(0px)" : "translateY(50px)",
+  });
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setIsVisible(true);
+          observer.unobserve(ref.current);
+        }
+      },
+      {
+        root: null,
+        rootMargin: "0px",
+        threshold: 0.5,
+      }
+    );
+
+    if (ref.current) {
+      observer.observe(ref.current);
+    }
+
+    return () => {
+      if (ref.current) {
+        observer.unobserve(ref.current);
+      }
+    };
+  }, []);
+
+  return (
+    <animated.div ref={ref} style={animationProps}>
+      <AboutContent />
+    </animated.div>
+  );
+};
+
+const LazyLoadedAboutEvent = () => {
+  const [isVisible, setIsVisible] = useState(false);
+  const ref = useRef(null);
+
+  const animationProps = useSpring({
+    opacity: isVisible ? 1 : 0,
+    transform: isVisible ? "translateY(0px)" : "translateY(50px)",
+  });
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setIsVisible(true);
+          observer.unobserve(ref.current);
+        }
+      },
+      {
+        root: null,
+        rootMargin: "0px",
+        threshold: 0.5,
+      }
+    );
+
+    if (ref.current) {
+      observer.observe(ref.current);
+    }
+
+    return () => {
+      if (ref.current) {
+        observer.unobserve(ref.current);
+      }
+    };
+  }, []);
+
+  return (
+    <animated.div ref={ref} style={animationProps}>
+      <AboutEvent />
+    </animated.div>
+  );
+};
+
 const About = () => {
   return (
     <div className="about-container">
       <div className="about-inner-container">
-        <AboutContent />
-        <AboutEvent />
+        <LazyLoadedAboutContent />
+        <LazyLoadedAboutEvent />
       </div>
     </div>
   );
