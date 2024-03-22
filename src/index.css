@@ -4,6 +4,7 @@
 
 :root {
     scroll-behavior: smooth;
+    background-color: black;
 }
 .nav-element:hover {
     width: max-content;
