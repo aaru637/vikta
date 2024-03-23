@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/vikta/static/css/main.7cc5a611.css",
-    "main.js": "/vikta/static/js/main.f90874e4.js",
-    "static/media/home_bg.jpg": "/vikta/static/media/home_bg.2f062fa1939faa2acbff.jpg",
-    "static/media/mr_engineer.jpg": "/vikta/static/media/mr_engineer.e0fbf7c5aa78278a4f7a.jpg",
-    "static/media/bug_spotter.jpg": "/vikta/static/media/bug_spotter.78eda2de6141b5175dfd.jpg",
-    "static/media/slide_to_success.jpg": "/vikta/static/media/slide_to_success.462b8f5ed24d682a4c37.jpg",
-    "static/media/sql_maestro.jpg": "/vikta/static/media/sql_maestro.8e4c7dcc75ebea66e4c2.jpg",
-    "static/media/web_artist.jpg": "/vikta/static/media/web_artist.81c37b4b9f176098be5f.jpg",
-    "static/media/associationlogo.jpg": "/vikta/static/media/associationlogo.08266418a1eac70073f5.jpg",
-    "static/media/gcelogo.jpeg": "/vikta/static/media/gcelogo.94c4504ed422c42cde3d.jpeg",
+    "main.css": "/vikta/static/css/main.6b38b7dc.css",
+    "main.js": "/vikta/static/js/main.a9cd4112.js",
+    "static/media/home_bg.jpg": "/vikta/static/media/home_bg.f3717d823b8b6126f759.jpg",
+    "static/media/mr_engineer.jpg": "/vikta/static/media/mr_engineer.f1813f74ca125e8d45f1.jpg",
+    "static/media/bug_spotter.jpg": "/vikta/static/media/bug_spotter.daee66844067ab783012.jpg",
+    "static/media/slide_to_success.jpg": "/vikta/static/media/slide_to_success.c9500e2efa6235cf493e.jpg",
+    "static/media/sql_maestro.jpg": "/vikta/static/media/sql_maestro.6e230dfb0c2ec883f350.jpg",
+    "static/media/web_artist.jpg": "/vikta/static/media/web_artist.80ed9a4be271a8a385d1.jpg",
+    "static/media/gcelogo.jpeg": "/vikta/static/media/gcelogo.bf420805f762473985de.jpeg",
+    "static/media/associationlogo.jpg": "/vikta/static/media/associationlogo.e33373cb0bb88bf58c22.jpg",
     "index.html": "/vikta/index.html",
     "static/media/close.svg": "/vikta/static/media/close.45bf93e36905876d1bb598b5c001db89.svg",
     "static/media/open.svg": "/vikta/static/media/open.4debb41411cd9535f542a8d3b7989f51.svg",
-    "main.7cc5a611.css.map": "/vikta/static/css/main.7cc5a611.css.map",
-    "main.f90874e4.js.map": "/vikta/static/js/main.f90874e4.js.map"
+    "main.6b38b7dc.css.map": "/vikta/static/css/main.6b38b7dc.css.map",
+    "main.a9cd4112.js.map": "/vikta/static/js/main.a9cd4112.js.map"
   },
   "entrypoints": [
-    "static/css/main.7cc5a611.css",
-    "static/js/main.f90874e4.js"
+    "static/css/main.6b38b7dc.css",
+    "static/js/main.a9cd4112.js"
   ]
 }
