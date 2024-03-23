@@ -3,9 +3,50 @@
 @tailwind utilities;
 
 :root {
-    scroll-behavior: smooth;
-    background-color: black;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  background-color: black;
+}
+
+.event-title {
+  font-weight: 800;
+  font-size: 35px;
+  color: white;
+  text-shadow: -3px -3px 0px green;
 }
 .nav-element:hover {
-    width: max-content;
+  width: max-content;
+}
+
+.nav-element {
+  text-decoration: none;
+  color: white;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+@keyframes slideFromLeft {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideFromRight {
+  from {
+    transform: translateX(10000%);
+  }
+  to {
+    transform: translateX(0);
+  }
 }

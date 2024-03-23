@@ -1,37 +1,123 @@
-const technicalEventData = [
+// images
+import mrEngineer from "../assets/images/mr_engineer.jpg";
+import sqlMaestro from "../assets/images/sql_maestro.jpg";
+import bugSpotter from "../assets/images/bug_spotter.jpg";
+import webArtist from "../assets/images/web_artist.jpg";
+import slideToSuccess from "../assets/images/slide_to_success.jpg";
+
+// text
+const technical = "Technical Events";
+const nonTechnical = "Non Technical Events";
+// event details
+const technicalEventDetails = [
   {
-    title: "Technical Event 1",
-    image:
-      "https://png.pngtree.com/thumb_back/fh260/background/20201022/pngtree-abstract-technology-background-hexagon-technical-space-image_430305.jpg", // Example image URL
-    venue: "Conference Hall A",
-    coordinators: ["John Doe", "Jane Smith"],
-    details: [
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-      "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    id: "mr_engineer",
+    name: "Mr Engineer",
+    image: mrEngineer,
+    about: [
+      "To be successful as a Mr.Engineer, individuals need to have strong analytical and problem-solving skills, attention to detail, excellent communication abilities, and a willingness to continously learn and adapt to new technologies and trends.",
+      "Based on Interview Concepts",
     ],
+    venue: "Lab - II",
   },
   {
-    title: "Technical Event 2",
-    image:
-      "https://png.pngtree.com/thumb_back/fh260/background/20201022/pngtree-abstract-technology-background-hexagon-technical-space-image_430305.jpg", // Example image URL
-    venue: "Auditorium",
-    coordinators: ["Alice Johnson", "Bob Williams"],
-    details: [
-      "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
-      "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    id: "sql_maestro",
+    name: "SQL Maestro",
+    image: sqlMaestro,
+    about: [
+      "To be successful as a Mr.Engineer, individuals need to have strong analytical and problem-solving skills, attention to detail, excellent communication abilities, and a willingness to continously learn and adapt to new technologies and trends.",
+      "Based on Interview Concepts",
     ],
+    venue: "Lab - II",
   },
   {
-    title: "Technical Event 3",
-    image:
-      "https://png.pngtree.com/thumb_back/fh260/background/20201022/pngtree-abstract-technology-background-hexagon-technical-space-image_430305.jpg", // Example image URL
-    venue: "Seminar Room B",
-    coordinators: ["Michael Brown", "Emily Davis"],
-    details: [
-      "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.",
-      "Totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.",
+    id: "bug_spotter",
+    name: "Bug Spotter",
+    image: bugSpotter,
+    about: [
+      "To be successful as a Mr.Engineer, individuals need to have strong analytical and problem-solving skills, attention to detail, excellent communication abilities, and a willingness to continously learn and adapt to new technologies and trends.",
+      "Based on Interview Concepts",
     ],
+    venue: "Lab - II",
+  },
+  {
+    id: "web_artist",
+    name: "Web Artist",
+    image: webArtist,
+    about: [
+      "To be successful as a Mr.Engineer, individuals need to have strong analytical and problem-solving skills, attention to detail, excellent communication abilities, and a willingness to continously learn and adapt to new technologies and trends.",
+      "Based on Interview Concepts",
+    ],
+    venue: "Lab - II",
+  },
+  {
+    id: "slide_to_success",
+    name: "Slide to Success",
+    image: slideToSuccess,
+    about: [
+      "To be successful as a Mr.Engineer, individuals need to have strong analytical and problem-solving skills, attention to detail, excellent communication abilities, and a willingness to continously learn and adapt to new technologies and trends.",
+      "Based on Interview Concepts",
+    ],
+    venue: "Lab - II",
+  },
+];
+const nonTechnicalEventDetails = [
+  {
+    id: "mr_engineer",
+    name: "Mr Engineer",
+    image: mrEngineer,
+    about: [
+      "To be successful as a Mr.Engineer, individuals need to have strong analytical and problem-solving skills, attention to detail, excellent communication abilities, and a willingness to continously learn and adapt to new technologies and trends.",
+      "Based on Interview Concepts",
+    ],
+    venue: "Lab - II",
+  },
+  {
+    id: "sql_maestro",
+    name: "SQL Maestro",
+    image: sqlMaestro,
+    about: [
+      "To be successful as a Mr.Engineer, individuals need to have strong analytical and problem-solving skills, attention to detail, excellent communication abilities, and a willingness to continously learn and adapt to new technologies and trends.",
+      "Based on Interview Concepts",
+    ],
+    venue: "Lab - II",
+  },
+  {
+    id: "bug_spotter",
+    name: "Bug Spotter",
+    image: bugSpotter,
+    about: [
+      "To be successful as a Mr.Engineer, individuals need to have strong analytical and problem-solving skills, attention to detail, excellent communication abilities, and a willingness to continously learn and adapt to new technologies and trends.",
+      "Based on Interview Concepts",
+    ],
+    venue: "Lab - II",
+  },
+  {
+    id: "web_artist",
+    name: "Web Artist",
+    image: webArtist,
+    about: [
+      "To be successful as a Mr.Engineer, individuals need to have strong analytical and problem-solving skills, attention to detail, excellent communication abilities, and a willingness to continously learn and adapt to new technologies and trends.",
+      "Based on Interview Concepts",
+    ],
+    venue: "Lab - II",
+  },
+  {
+    id: "slide_to_success",
+    name: "Slide to Success",
+    image: slideToSuccess,
+    about: [
+      "To be successful as a Mr.Engineer, individuals need to have strong analytical and problem-solving skills, attention to detail, excellent communication abilities, and a willingness to continously learn and adapt to new technologies and trends.",
+      "Based on Interview Concepts",
+    ],
+    venue: "Lab - II",
   },
 ];
 
-export default technicalEventData;
+export {
+  mrEngineer,
+  technicalEventDetails,
+  nonTechnicalEventDetails,
+  technical,
+  nonTechnical,
+};

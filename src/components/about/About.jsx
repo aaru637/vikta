@@ -18,7 +18,7 @@ const LazyLoadedAboutContent = () => {
       },
       {
         root: null,
-        rootMargin: "0px",
+        rootMargin: "10px",
         threshold: 0.1,
       }
     );
@@ -93,7 +93,7 @@ const LazyLoadedAboutEvent = () => {
 
 const About = () => {
   return (
-    <div className="about-container" id="aboutus">
+    <div className="about-container">
       <div className="about-inner-container">
         <LazyLoadedAboutContent />
         <LazyLoadedAboutEvent />

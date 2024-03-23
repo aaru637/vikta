@@ -3,8 +3,6 @@
   background-color: black;
   color: rgb(26, 198, 26);
   padding: 30px 60px;
-
-  min-height: 100vh;
 }
 
 .about-inner-container {
@@ -20,16 +18,12 @@
 
 .about-content-text {
   padding-top: 30px;
-  font-size: xx-large;
   text-align: justify;
 }
 
 .gradient-text {
-  background: linear-gradient(45deg, green, white);
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
-  text-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+  color: rgb(31, 180, 206);
+  text-shadow: 0 0 1.2px white;
 }
 
 @keyframes slideFromLeft {
@@ -41,7 +35,7 @@
   }
 }
 
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 680px) {
   .about-container {
     padding: 12px 24px;
   }

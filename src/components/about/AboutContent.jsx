@@ -5,8 +5,10 @@ const AboutContent = () => {
   console.log(about);
   return (
     <div className="about-content-container">
-      <h1 className="about-title">About Us</h1>
-      <p className="about-content-text gradient-text">{about}</p>
+      <h1 className="about-title" id="aboutus">
+        About Us
+      </h1>
+      <p className="about-content-text gradient-text sm:text-xl">{about}</p>
     </div>
   );
 };
