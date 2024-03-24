@@ -28,9 +28,9 @@ const LazyLoadedAboutContent = () => {
     }
 
     return () => {
-      if (ref.current) {
-        observer.unobserve(ref.current);
-      }
+      // if (ref.current) {
+      //   observer.unobserve(ref.current);
+      // }
     };
   }, []);
 
@@ -72,9 +72,9 @@ const LazyLoadedAboutEvent = () => {
     }
 
     return () => {
-      if (ref.current) {
-        observer.unobserve(ref.current);
-      }
+      // if (ref.current) {
+      //   observer.unobserve(ref.current);
+      // }
     };
   }, []);
 
