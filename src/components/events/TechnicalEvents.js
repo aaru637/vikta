@@ -1,5 +1,9 @@
 import React, { useEffect, useRef, useState } from "react";
-import { technical, technicalEventDetails } from "../../utils/eventsUtils";
+import {
+  techCoOrdinator,
+  technical,
+  technicalEventDetails,
+} from "../../utils/eventsUtils";
 import { useSpring, animated } from "react-spring";
 import EventCard from "./EventCard";
 
@@ -55,6 +59,14 @@ const TechnicalEvents = () => {
   return (
     <div id="events" className="p-3">
       <p className="text-center text-white event-title">{technical}</p>
+      <br />
+      <p className="text-green-300 px-5 sm:text-2xl text-lg font-poppins font-bold lg:w-[70%] lg:text-center event-content">
+        {techCoOrdinator.title} :{" "}
+        <span className="sm:text-lg text-sm font-roboto font-semibold">
+          {techCoOrdinator.name}
+        </span>
+      </p>
+      <br />
       <div className="flex flex-col w-full items-center mx-auto gap-5">
         {technicalEventDetails.map((value, index) => (
           <LazyLoadedTechnicalCard value={value} index={index} />

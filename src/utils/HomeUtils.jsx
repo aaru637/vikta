@@ -9,6 +9,7 @@ import homebg from "../assets/images/home_bg.jpg";
 import rocket from "../assets/lottie-files/home-rocket.json";
 import rain from "../assets/lottie-files/rain.json";
 import hello from "../assets/lottie-files/hello.json";
+import sympoLogo from "../assets/images/sympo_logo.png";
 
 // navbar
 const navbarTitles = [
@@ -67,4 +68,5 @@ export {
   hello,
   collegeWebsite,
   departmentWebsite,
+  sympoLogo,
 };

@@ -16,6 +16,11 @@
   color: white;
   text-shadow: -3px -3px 0px green;
 }
+
+.event-content {
+  text-shadow: 2px 2px 3px white;
+}
+
 .nav-element:hover {
   width: max-content;
 }

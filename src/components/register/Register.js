@@ -2,6 +2,7 @@ import React from "react";
 import {
   click,
   information,
+  link,
   note,
   online,
   rules,
@@ -48,7 +49,9 @@ const Register = () => {
           </List.Item>
         ))}
       </List>
-      <Button className="mx-auto">{click}</Button>
+      <a href={link} target="blank" className="mx-auto">
+        <Button>{click}</Button>
+      </a>
     </div>
   );
 };

@@ -16,6 +16,7 @@ import {
   hello,
   collegeWebsite,
   departmentWebsite,
+  sympoLogo,
 } from "../../utils/HomeUtils";
 import "./home.css";
 import Lottie from "react-lottie";
@@ -65,6 +66,14 @@ const Home = () => {
       {/* Department Name */}
       <p className="font-exo sm:text-3xl text-lg department">{department}</p>
 
+      <img
+        src={sympoLogo}
+        alt="assoc logo"
+        className="w-20 h-20 rounded-full sm:w-[8rem] sm:h-[8rem] cursor-pointer"
+        onClick={() => {
+          navigateToCollege(departmentWebsite);
+        }}
+      />
       {/* Association */}
       <div className="flex flex-col items-center association p-3">
         <p className="font-oswald sm:text-3xl text-sm">{association1}</p>

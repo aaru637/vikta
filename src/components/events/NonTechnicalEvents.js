@@ -1,5 +1,6 @@
 import React, { useEffect, useRef, useState } from "react";
 import {
+  nonTechCoOrdinator,
   nonTechnical,
   nonTechnicalEventDetails,
 } from "../../utils/eventsUtils";
@@ -58,6 +59,14 @@ const NonTechnicalEvents = () => {
   return (
     <div className="px-3 py-16">
       <p className="text-center text-white event-title">{nonTechnical}</p>
+      <br />
+      <p className="text-green-300 px-5 sm:text-2xl text-lg font-poppins font-bold lg:w-[70%] lg:text-center event-content">
+        {nonTechCoOrdinator.title} :{" "}
+        <span className="sm:text-lg text-sm font-roboto font-semibold">
+          {nonTechCoOrdinator.name}
+        </span>
+      </p>
+      <br />
       <div className="flex flex-col w-full items-center gap-5">
         {nonTechnicalEventDetails.map((value, index) => (
           <LazyLoadedNonTechnicalCard value={value} index={index} />

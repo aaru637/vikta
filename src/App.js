@@ -6,6 +6,8 @@ import Register from "./components/register/Register";
 import Footer from "./components/footer/Footer";
 import TechnicalEvents from "./components/events/TechnicalEvents";
 import NonTechnicalEvents from "./components/events/NonTechnicalEvents";
+import SocialMedia from "./components/social-media/SocialMedia";
+import Contact from "./components/contact/Contact";
 
 function App() {
   return (
@@ -16,6 +18,8 @@ function App() {
       <TechnicalEvents />
       <NonTechnicalEvents />
       <Register />
+      <SocialMedia />
+      <Contact />
       <Footer />
     </div>
   );
