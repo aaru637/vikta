@@ -1,8 +1,9 @@
-import { Card } from "flowbite-react";
-import React from "react";
+import { Card, Modal } from "flowbite-react";
+import React, { useState } from "react";
 import ReactWhatsapp from "react-whatsapp";
 
 const ContactCard = ({ data }) => {
+  const [openModal, setOpenModal] = useState(false);
   return (
     <>
       <Card className="w-[15rem] h-[25rem]">
@@ -12,7 +13,8 @@ const ContactCard = ({ data }) => {
             height="150"
             src={data.image}
             width="150"
-            className="mb-3 rounded-3xl shadow-lg"
+            className="mb-3 rounded-3xl shadow-lg cursor-pointer"
+            onClick={() => setOpenModal(true)}
           />
           <h5 className="mb-1 text-xl font-medium text-gray-900 dark:text-white text-center">
             {data.name}
@@ -37,6 +39,30 @@ const ContactCard = ({ data }) => {
           </div>
         </div>
       </Card>
+      <Modal
+        show={openModal}
+        size="lg"
+        onClose={() => setOpenModal(false)}
+        popup
+        position={"center"}
+      >
+        <Modal.Header />
+        <Modal.Body>
+          <div className="text-center">
+            <h5 className="mb-2 text-2xl font-bold text-gray-900 dark:text-white text-center">
+              {data.name}
+            </h5>
+            <span className="mb-2 text-lg font-semibold text-black text-center">
+              {data.postName}
+            </span>
+            <img
+              alt={data.name}
+              src={data.image}
+              className="mb-1 mt-2 rounded-3xl shadow-lg"
+            />
+          </div>
+        </Modal.Body>
+      </Modal>
     </>
   );
 };
