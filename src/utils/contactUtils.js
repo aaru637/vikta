@@ -20,7 +20,7 @@ const contactDetails = [
   {
     postName: "Non Technical Event Coordinator",
     name: "Vinothkumar N",
-    contact: "+919159685408",
+    contact: "+917448576196",
     image: vinoth,
   },
 ];
