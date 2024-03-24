@@ -14,7 +14,7 @@ const information = [
   },
 ];
 const rules = [
-  "Attendees must register before a 29-03-2024",
+  "Attendees must register before a 07-04-2024",
   "Attendees must need to pay a fee to attend the symposium.",
   "Attendees who participates in Technical Events receives Participation Certificate.",
 ];
