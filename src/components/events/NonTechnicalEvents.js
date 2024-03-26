@@ -69,7 +69,11 @@ const NonTechnicalEvents = () => {
       <br />
       <div className="flex flex-col w-full items-center gap-5">
         {nonTechnicalEventDetails.map((value, index) => (
-          <LazyLoadedNonTechnicalCard value={value} index={index} />
+          <LazyLoadedNonTechnicalCard
+            key={value.id}
+            value={value}
+            index={index}
+          />
         ))}
       </div>
     </div>

@@ -6,7 +6,7 @@ const SocialMedia = () => {
   return (
     <div className="flex flex-row justify-center gap-3 m-4">
       {socialMediaContent.map((data) => (
-        <SocialMediaCard key={DataTransfer.id} data={data} />
+        <SocialMediaCard key={data.id} data={data} />
       ))}
     </div>
   );

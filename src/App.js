@@ -8,6 +8,7 @@ import TechnicalEvents from "./components/events/TechnicalEvents";
 import NonTechnicalEvents from "./components/events/NonTechnicalEvents";
 import SocialMedia from "./components/social-media/SocialMedia";
 import Contact from "./components/contact/Contact";
+import Location from "./components/location/Location";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
       <Register />
       <SocialMedia />
       <Contact />
+      <Location />
       <Footer />
     </div>
   );
